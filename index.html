@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Message Sender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <input type="text" id="idInstance" placeholder="IDInstance">
+            <input type="text" id="apiTokenInstance" placeholder="APIToken">
+            <button onclick="getSettings()">getSettings</button>
+            <button onclick="getStateInstance()">getStateInstance</button>
+            
+            <input type="text" id="phoneNumber" placeholder="7984917891">
+            <input type="text" id="messageText" placeholder="Hello, World!">
+            <button onclick="sendMessage()">sendMessage</button>
+            
+            <input type="text" id="phoneNumberFile" placeholder="7984917891">
+            <input type="text" id="fileUrl" placeholder="https://example.com/image.jpg">
+            <button onclick="sendFileByUrl()">sendFileByUrl</button>
+        </div>
+        <div class="right-panel">
+            <h3>Ответ API:</h3>
+            <pre id="responseBox"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
